@@ -1,0 +1,143 @@
+/**
+ * Collapsibles
+ */
+.customize-collapsible {
+	position: relative;
+	margin: 0 -12px;
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.customize-collapsible h3 {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 10px 14px;
+	color: #555;
+	background: white;
+	line-height: 21px;
+}
+
+.customize-collapsible h3:after {
+	position: absolute;
+	top: 12px;
+	right: 14px;
+	color: #a0a5aa;
+	font: 400 20px/1 dashicons;
+	content: "\f343";
+}
+
+.customize-collapsible h3:hover {
+	color: #0073aa;
+	background: #f5f5f5;
+}
+
+.customize-collapsible h3:hover:after {
+	color: #0073aa;
+}
+
+.customize-control-collapsed {
+	margin-bottom: 0;
+}
+
+.customize-control-collapsed .customize-collapsible h3:after {
+	content: "\f347";
+}
+
+.customize-control-hidden {
+	height: 0 !important;
+	overflow: hidden !important;
+	visibility: hidden;
+}
+
+.customize-section-description-container + .customize-control-kirki-custom .customize-collapsible {
+	border-top: 0;
+}
+
+/**
+ * Hide Label of the next control after toggle_next
+ */
+li[id$="toggle_next"] + li {
+	margin-top: -12px;
+}
+
+li[id$="toggle_next"] + li .customize-control-title {
+	display: none;
+}
+
+/**
+ * Controls with hidden titles
+ */
+li[id$="hidden_title"] {
+	margin-top: -12px;
+}
+
+li[id$="hidden_title"] .customize-control-title {
+	display: none;
+}
+
+/**
+ * Hidden controls
+ */
+li[id$="hidden"] {
+	display: none !important;
+}
+
+/**
+ * Sortable Field
+ */
+.customize-control-kirki-sortable ul.ui-sortable li {
+	border-color: #dbdbdb;
+}
+
+/**
+ * Select 2 Styles
+ */
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+	border-color: #dbdbdb;
+}
+
+.select2-results__option {
+	margin-bottom: 0;
+}
+
+/**
+ * Descriptions
+ */
+#customize-controls span.customize-control-description {
+	margin-top: 0.5em;
+	color: #999fa7;
+	font-size: 12px;
+	font-style: normal;
+}
+
+/**
+ * Radio Image
+ */
+.customize-control-kirki-radio-image > .image {
+	max-width: 250px;
+}
+
+/**
+ * Theme Demos
+ */
+.wp-customizer .csco-theme-demos .themes {
+	padding-left: 0;
+}
+
+.wp-customizer .csco-theme-demos .csco-theme-demo {
+	width: 100%;
+	margin: 0 auto 15px auto;
+	max-width: 300px;
+	cursor: auto;
+}
+
+.wp-customizer .csco-theme-demos .csco-theme-demo .theme-actions {
+	top: auto;
+	bottom: 0;
+	transform: none;
+}
+
+.wp-customizer .csco-theme-demos .csco-theme-demo .screenshot img {
+	display: block;
+}
